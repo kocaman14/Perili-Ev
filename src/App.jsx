@@ -28,7 +28,7 @@ export default function App() {
       clearTimeout(timerId);
     }
     },[number]);
-console.log(arr.map((ar)=>ar.bathrooms))
+let price=housesForSale.sort((a, b) => a.yearBuilt - b.yearBuilt);
   /* Challenge
   
       Aşağıdaki map metodu tarafından oluşturulan houseCard'ların JSX'inin ayrı bir fonksiyonel bileşene yerleştirilmesi gerekiyor. Göreviniz bunu aşağıdaki gibi yapmaktır:
