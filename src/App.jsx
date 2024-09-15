@@ -8,6 +8,7 @@ import { useState,useEffect } from "react";
 
 
 export default function App() {
+housesForSale.sort((a, b) => a.yearBuilt - b.yearBuilt);
   const [number,setNumber]=useState(0)
   const[arr,setNewAr]=useState([])
   useEffect(() => {
@@ -28,7 +29,6 @@ export default function App() {
       clearTimeout(timerId);
     }
     },[number]);
-let price=housesForSale.sort((a, b) => a.yearBuilt - b.yearBuilt);
   /* Challenge
   
       Aşağıdaki map metodu tarafından oluşturulan houseCard'ların JSX'inin ayrı bir fonksiyonel bileşene yerleştirilmesi gerekiyor. Göreviniz bunu aşağıdaki gibi yapmaktır:
